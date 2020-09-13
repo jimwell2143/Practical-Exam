@@ -17,6 +17,6 @@ Route::post('login', 'Auth\AuthController@login');
 Route::post('logout', 'Auth\AuthController@logout');
 
 Route::post('register', 'User\UserController@register');
-
+Route::get('users', 'User\UserController@index');
 Route::post('order', 'Order\OrderController@order');
 

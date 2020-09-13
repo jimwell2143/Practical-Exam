@@ -24,4 +24,9 @@ class UserController extends ApiController
 
         return $this->successResponse('User successfully registered', 201);
     }
+
+    public function index(){
+        $users = User::all();
+        return response()->json(['data' => $users]);
+    }
 }
